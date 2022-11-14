@@ -10,7 +10,7 @@
 
 ## **How To Use**
 - Clone repository
- ``git clone https://github.com/Fala2002/TPA-5``
+ ``https://github.com/dianaPermata/TPA-5.git``
 - Menginstall semua dependencies, seperti express, mongoose, nodemon, jsonwebtoken, bcrypt, dotev dengan cara
  ``npm install express``
  ``npm install mongoose``
@@ -26,9 +26,8 @@
 1. **Get All User**, Untuk mendapatkan semua data user.
     - Methods : get
     - Endpoint : api/user
-      ``
     - Respons :
-      ``
+      ```
               {
           "message": "succes to get data",
           "data": [
