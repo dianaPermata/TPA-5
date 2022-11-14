@@ -45,14 +45,14 @@
             }
           ]
         }
-      ``
+      ```
 
 2. **Get User By Id**, Untuk mendapatkan data user berdasarkan id.
     - Methods : get
     - Endpoint : api/user/id
     - Respons :
      
-      ``
+      ```
       {
           "message": "succes to get data",
           "data": {
@@ -63,28 +63,29 @@
             "__v": 0
           }
         }
-      ``
+      ```
 
 3. **Register**, Untuk melakukan registrasi.
     - Methods : post
     - Endpoint : api/user/register
     - Body :
      
-      ``
+      ```
       {
         name: String,
         email: String,
         password: String  
       } 
-      ``
+      ```
+      
     - Respons :
 
-      ``
+      ```
       {
         Jika berhasil :
         "succesfully"
       }
-      ``
+      ```
 
 4. **Login**, Untuk melakukan login/masuk.
     - Methods : post
@@ -92,15 +93,15 @@
     - Body :
    
     - 
-      ``
+      ```
       {
         email: String,
         password: String  
       } 
-      ``
+      ```
     - Respons :
     
-      ``
+      ```
       {
         Jika berhasil :
         "login succes"
@@ -108,7 +109,7 @@
         Jika gagal :
         "failed login"
       }
-      ``
+      ```
 
 ### **Task**
 1. **Get All Task**, Untuk mendapatkan semua data task.
@@ -116,7 +117,7 @@
     - Endpoint : api/task
     - Respons :
   
-      ``
+      ```
          {
             "message": "success get data",
             "data": [
@@ -146,14 +147,14 @@
               }
             ]
           }
-      ``
+      ```
 
-2. **Get User By Id**, Untuk mendapatkan data task berdasarkan id.
+2. **Get Task By Id**, Untuk mendapatkan data task berdasarkan id.
     - Methods : get
     - Endpoint : api/task/id
     - Respons :
   
-      ``
+      ```
           {
             "message": "succes get data",
             "data": {
@@ -164,34 +165,36 @@
               "__v": 0
             }
           }
-      ``
+      ```
 
 3. **Add task**, Untuk menambahkan task
     - Methods : post
     - Endpoint : api/task/addtask
     - Body :
   
-      ``
+      ```
         {
             "title":"project-Febe",
             "isDone":true,
             "user":"63733ed0ea1f770c2472d9c8"
         }
-      ``
+      ```
+      
     - Respons :
   
-      ``
+      ```
       {
         Jika berhasil :
         "task has been created""
       }
-      ``
+      ```
 
 4. **delete by id task**, Untuk menghapus data task byid
     - Methods : delete
     - Endpoint : api/task/id
     - Respons :
-      ``
+     
+      ```
       {
         Jika berhasil :
         "Data deleted"
@@ -206,7 +209,7 @@
     - Endpoint : api/task/id
     - Respons :
 
-      ``
+      ```
       {
         Jika berhasil :
         "succes deleted data"
@@ -214,14 +217,14 @@
         Jika gagal : 
         "failed deleted data"
       }
-      ``
+      ```
 
 6. **Update task**, Untuk update data task
     - Methods : patch
     - Endpoint : api/task/id
     - Body :
  
-        ``
+        ```
          {
             "_id": "637343be0681dc05d3e80d64",
             "title": "project-febe-20",
@@ -229,10 +232,11 @@
             "user": "63733ed0ea1f770c2472d9c8",
             "__v": 0
           }
-      `` 
+          
+      ```
     - Respons :
 
-      ``
+      ```
         jika berhasil:
          {
             "_id": "637343be0681dc05d3e80d64",
@@ -244,4 +248,4 @@
 
           jika gagal : 
           messsage : "server error"
-      ``
+      ```
